@@ -1,0 +1,28 @@
+:root{
+    --color-primario: #FFB902;
+    --color-negro: #222222;
+    --color-claro: #FBF4E2;
+    --color-amarillo-suave: #F6E7C6;
+    --tamano-fuente: 16px;
+}
+
+.contenedor{
+    max-width: 1200px;
+}
+
+.cabecera{
+
+}
+
+.intro{
+
+}
+
+.tarjeta-producto{
+
+}
+
+.footer{
+
+}
+
