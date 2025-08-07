@@ -1,28 +1,251 @@
-:root{
-    --color-primario: #FFB902;
-    --color-negro: #222222;
-    --color-claro: #FBF4E2;
-    --color-amarillo-suave: #F6E7C6;
-    --tamano-fuente: 16px;
+:root {
+  --color-primario: #ffb902;
+  --color-negro: #222222;
+  --color-claro: #fbf4e2;
+  --color-amarillo-suave: #f6e7c6;
+  --tamano-fuente: 16px;
+  --tamano-border-radius: 13px;
 }
 
-.contenedor{
-    max-width: 1200px;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.cabecera{
-
+.contenedor {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-.intro{
-
+/* ------------------------ Fuentes ------------------------ */
+.oleo-script-regular {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.tarjeta-producto{
-
+.oleo-script-bold {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.footer{
-
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* ------------------------ Cabecera ------------------------ */
+.cabecera {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primario);
+  color: white;
+  border-radius: 15px;
+  justify-content: space-between;
+  padding: 0.6rem 2rem;
+  margin-top: 1rem;
+}
+.cabecera-logo {
+}
+.cabecera-buscador {
+  padding: 0 1rem;
+  background-color: var(--color-negro);
+  border-radius: 10rem;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cabecera-buscador input {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  width: 100%;
+  flex: 1;
+}
+.cabecera-buscador input:focus {
+  border: none;
+  outline: none;
+}
+.cabecera-acciones {
+  display: flex;
+  justify-content: space-between;
+}
+.cabecera-buscador i {
+  color: white;
+  flex-shrink: 0;
 }
 
+/* ------------------------ Introduccion ------------------------ */
+.intro {
+  background-color: var(--color-primario);
+  margin-top: 1rem;
+  border-radius: 24px;
+  color: white;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  min-height: 400px;
+  position: relative;
+}
+
+.intro-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  height: 100%;
+}
+
+.intro-texto {
+  flex: 1;
+  max-width: 900px;
+  z-index: 2;
+  margin: 5rem 0;
+}
+
+.intro-titulo {
+  font-size: 6rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  line-height: 1.1;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.intro-parrafo {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 32px;
+  line-height: 1.6;
+  opacity: 0.95;
+  text-wrap-style: balance;
+}
+
+.intro-boton-accion {
+  background-color: var(--color-negro);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.intro-imagen {
+  /* width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1; */
+  position: absolute;
+  width: 500px;
+  bottom: -10px;
+  right: 0;
+}
+
+.intro-imagen img {
+  width: 100%;
+}
+
+.contenido{
+
+}
+/* ------------------------ seccion productos ------------------------ */
+.seccion-productos-contenido{
+    
+    display: flex;
+        gap: 10px;
+
+}
+.tarjeta-producto {
+    background-color: var(--color-claro);
+    border-radius: 10px;
+}
+.producto-imagen{
+    width: 300px;
+}
+.producto-imagen img{
+    width: 100%;
+}
+.producto-titulo{
+
+}
+.producto-footer{
+    background-color: var(--color-primario);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 12px;
+}
+.producto-footer p{
+    flex: 1;
+}
+.producto-footer button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* ------------------------ Footer ------------------------ */
+.footer {
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+  /* Cabecera */
+  .cabecera{
+    margin-top: 0.2rem;
+  }
+
+  /* Introduccion */
+  .intro-contenido {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .intro-titulo {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .intro-texto{
+    margin: 1rem 0;
+  }
+
+  .intro-parrafo {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
+  .intro-imagen {
+    width: 400px;
+    position: relative;
+    /* margin-top: 30px; */
+
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-contenido {
+    padding: 30px 20px;
+  }
+
+  .intro-titulo {
+    font-size: 2rem;
+  }
+}

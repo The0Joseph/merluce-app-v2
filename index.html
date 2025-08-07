@@ -1,22 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Url de google necesario para las fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <title>Merluce</title>
+</head>
+<body class="contenedor">
+    <!-- Navegacion -->
+    <header class="cabecera">
+
+        <div class="cabecera-logo">
+            LOGO
+        </div>
+        <div class="cabecera-buscador">
+            <input type="text">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="cabecera-acciones">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
     </header>
-    <section>
+    <!-- Introduccion -->
+    <section class="intro">
+        <div class="intro-contenido">
+            <div class="intro-texto">
+                <h1 class="intro-titulo oleo-script-regular ">Descubre Merluce</h1>
+                <p class="intro-parrafo roboto-regular ">Merluce es tu tienda de abarrotes de confianza, con mas de 10 años ofreciendo productos escenciales, atención amable y un servicio con valores como la responsabilidad y la dedicación.</p>
+                <button class="intro-boton-accion">Explorar</button>
+            </div>
+            <div class="intro-imagen">
+                <img src="img/imagen_introduccion.png" alt="">
+            </div>
+        </div>
 
     </section>
+    <!-- Contenido -->
     <main>
+        <div class="seccion-productos">
+            <div class="seccion-productos-titulo">
+                <h2 class="oleo-script-bold">Mis Productos</h2>
+                <button>Ver más</button>
+            </div>
+            <div class="seccion-productos-contenido">
+                <!-- Tarjeta -->
+                <div class="tarjeta-producto">
+                    <div class="producto-imagen">
+                        <img src="img/productos/coca_cola.png" alt="">
+                    </div>
+                    <h5 class="producto-titulo">Gaseosa Coca Cols 500 ml</h5>
+                    <div class="producto-footer">
+                        <p>S/ 2.50</p>
+                        <button >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
 
+                </div>
+                <div class="tarjeta-producto">
+                    <div class="producto-imagen">
+                        <img src="img/productos/coca_cola.png" alt="">
+                    </div>
+                    <h5 class="producto-titulo">Gaseosa Coca Cols 500 ml</h5>
+                    <div class="producto-footer">
+                        <p>S/ 2.50</p>
+                        <button >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </main>
-
+    <!-- footer -->
     <footer>
 
     </footer>
