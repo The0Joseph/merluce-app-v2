@@ -157,47 +157,86 @@ body {
   width: 100%;
 }
 
-.contenido{
-
+.contenido {
 }
 /* ------------------------ seccion productos ------------------------ */
-.seccion-productos-contenido{
-    
-    display: flex;
-        gap: 10px;
-
+.seccion-productos {
+  margin: 6rem 0;
 }
+.seccion-productos-contenido {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.seccion-productos-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seccion-productos-titulo h1 {
+  font-size: 2.5rem;
+}
+.seccion-productos-titulo button {
+  background-color: var(--color-primario);
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: var(--tamano-border-radius);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* ... tarjeta ... */
 .tarjeta-producto {
-    background-color: var(--color-claro);
-    border-radius: 10px;
-}
-.producto-imagen{
-    width: 300px;
-}
-.producto-imagen img{
-    width: 100%;
-}
-.producto-titulo{
+  background-color: var(--color-claro);
+  border-radius: 10px;
+  margin: 1rem 0;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
 
 }
-.producto-footer{
-    background-color: var(--color-primario);
-    display: flex;
-    align-items: center;
-    padding: 0 1rem;
-    border-radius: 12px;
+.tarjeta-producto-contenido{
+  padding: 1rem;
+  flex: 1;
 }
-.producto-footer p{
-    flex: 1;
+.tarjeta-producto-imagen {
 }
-.producto-footer button{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    flex-shrink: 0;
+.tarjeta-producto-imagen img {
+  width: 100%;
+}
+.tarjeta-producto-titulo {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.tarjeta-producto-footer {
+  background-color: var(--color-primario);
+  display: flex;
+  align-items: center;
+  padding: 0.1rem 1rem;
+  border-radius: 12px;
+  font-size: 1.5rem;
+}
+.tarjeta-producto-footer p {
+  flex: 1;
+}
+.tarjeta-producto-footer button {
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  flex-shrink: 0;
+  border: none;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.tarjeta-producto-footer button:hover{
+  background-color: var(--color-negro);
+  color: lightgray;
+  transform: scale(1.1);
 }
 
 /* ------------------------ Footer ------------------------ */
@@ -208,7 +247,7 @@ body {
 
 @media (max-width: 768px) {
   /* Cabecera */
-  .cabecera{
+  .cabecera {
     margin-top: 0.2rem;
   }
 
@@ -223,7 +262,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 20px;
   }
-  .intro-texto{
+  .intro-texto {
     margin: 1rem 0;
   }
 
@@ -236,7 +275,6 @@ body {
     width: 400px;
     position: relative;
     /* margin-top: 30px; */
-
   }
 }
 
