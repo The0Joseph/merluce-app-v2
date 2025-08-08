@@ -129,9 +129,9 @@ body {
 .intro-boton-accion {
   background-color: var(--color-negro);
   color: white;
-  padding: 16px 32px;
+  padding: 1rem 3rem;
   border-radius: 12px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -140,13 +140,12 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.intro-boton-accion:hover{
+    background-color: var(--color-negro);
+    transform: scale(1.1);
+}
+
 .intro-imagen {
-  /* width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 1; */
   position: absolute;
   width: 500px;
   bottom: -10px;
@@ -157,8 +156,6 @@ body {
   width: 100%;
 }
 
-.contenido {
-}
 /* ------------------------ seccion productos ------------------------ */
 .seccion-productos {
   margin: 6rem 0;
