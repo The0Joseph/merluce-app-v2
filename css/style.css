@@ -84,7 +84,6 @@ body {
   font-size: 1.5rem;
 }
 
-
 /* ------------------------ Introduccion ------------------------ */
 .intro {
   background-color: var(--color-primario);
@@ -386,6 +385,21 @@ body {
     width: 400px;
     position: relative;
   }
+
+  /* Footer */
+  .footer-contenedor {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .seccion-subscripcion {
+    align-items: center;
+  }
+
+  .caja-check-contenedor {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -395,5 +409,9 @@ body {
 
   .intro-titulo {
     font-size: 2rem;
+  }
+  /* seccion productos */
+  .seccion-productos-contenido{
+    justify-content: center;
   }
 }
