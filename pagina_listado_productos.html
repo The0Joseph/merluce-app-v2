@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Url de google necesario para las fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Productos | Merluce</title>
+</head>
+<body class="contenedor">
+        <!-- Navegacion -->
+    <header class="cabecera">
+
+        <div class="cabecera-logo">
+            LOGO
+        </div>
+        <div class="cabecera-buscador">
+            <input type="text">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="cabecera-acciones">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </header>
+    <main>
+        <div class="seccion-listado-productos">
+            <!-- Filtrado -->
+            <div class="filtrado-contenedor">
+                <h1 class="oleo-script-bold">Productos</h1>
+            </div>
+
+            <section class="contenedor-listado-productos">
+                <!-- Barra de ordenamiento -->
+                 <div class="barra-ordenamiento">
+                    <div>
+                        <h2>Ordenar por:</h2>
+                        <select name="" id="">
+                            <option value="">Recomendados</option>
+                            <option value="">Precio de menor a mayor</option>
+                            <option value="">Precio de mayor a menor</option>
+                        </select>
+                    </div>
+                 </div>
+
+                 <!-- listado de productos -->
+                  <section class="contenido-listado-productos">
+                     <!-- Tarjeta -->
+                     <div class="tarjeta-producto">
+                         <div class="tarjeta-producto-contenido">
+                             <div class="tarjeta-producto-imagen">
+                                 <img src="img/productos/gaseosa_coca_cola.png" alt="">
+                             </div>
+                             <h5 class="tarjeta-producto-titulo">Gaseosa Coca Cola 500 ml</h5>
+                         </div>
+                         <div class="tarjeta-producto-footer">
+                             <p>S/ 2.50</p>
+                             <button >
+                                 <i class="fa-solid fa-plus"></i>
+                             </button>
+                         </div>
+                     </div>
+                  </section>
+            </section>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer-contenedor roboto-regular">
+        <div>
+            LOGO
+        </div>
+        <div>
+            <p>+51 914 505 101</p>
+            <p>merluce.com</p>
+            <p>Av. José Olaya, Pucalá, Chiclayo, Perú</p>
+        </div>
+        <div class="grupo-links">
+            <a href="#" class="politica-link">Política de Privacidad</a>
+            <a href="#" class="politica-link">Declaración de Accesibilidad</a>
+            <a href="#" class="politica-link">Política de Envío</a>
+            <a href="#" class="politica-link">Términos y Condiciones</a>
+            <a href="#" class="politica-link">Política de Reembolso</a>
+        </div>
+        <div class="seccion-subscripcion">
+            <label for="text-email">Email</label>
+            <input type="text" class="caja-subscripcion" id="text-email">
+            <div class="caja-check-contenedor">
+                <input type="checkbox" class="caja-check" id="subscribete-check">
+                <label for="subscribete-check" class="caja-check-label">Sí, suscribirse</label>
+            </div>
+            <button class="subscribete-boton">Suscribirse</button>
+        </div>
+    </footer>
+    
+</body>
+</html>
