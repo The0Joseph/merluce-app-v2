@@ -377,9 +377,9 @@ body {
 /* ------------------------ Seccion: lista de productos ------------------------ */
 .seccion-listado-productos{
   display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 1.5rem;
-  margin: 1rem 0;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 .filtrado-contenedor{
   background-color: var(--color-claro);
@@ -492,7 +492,7 @@ body {
   margin: 0;
 }
 .barra-ordenamiento div > select{
-  background-color: #f7b500;
+  background-color: var(--color-primario);
   color: white; 
   font-size: 16px;
   padding: 12px 12px;
@@ -511,9 +511,10 @@ body {
   box-sizing: border-box;
 }
 .contenido-listado-productos{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 /* Responsivo */
