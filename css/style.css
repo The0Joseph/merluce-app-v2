@@ -30,6 +30,11 @@ body {
   font-style: normal;
 }
 
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -380,6 +385,101 @@ body {
   background-color: var(--color-claro);
   border-radius: 1.5rem;
 }
+
+.filtrado-contenido{
+  margin: 1rem;
+}
+.filtrado-contenido h1{
+  text-align: center;
+}
+.filtrado-contenido p{
+  font-size: 1.2rem;
+}
+
+
+.filtrado-apartado{
+  display: flex;
+  flex-direction: column;
+}
+.filtrado-apartado h3 {
+  font-size: 1.3rem;
+}
+.filtrado-apartado ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.filtrado-apartado ul li{
+  margin: 0.3rem 0;
+}
+.filtrado-apartado label{
+  display: flex;
+  align-items: center;
+}
+.filtrado-apartado input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #2c2c2c;
+  border-radius: 4px; 
+  background-color: transparent;
+  cursor: pointer;
+}
+.filtrado-apartado input[type="checkbox"]:checked {
+  background-color: var(--color-primario); 
+}
+.filtrado-apartado input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: white;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  line-height: 20px; 
+}
+
+
+
+.rango-precio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+.rango {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: var(--color-primario);
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.rango::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: var(--color-primario);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.rango::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: var(--color-primario);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.valores {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
 .barra-ordenamiento{
   background-color: var(--color-claro);
   padding: 5rem 0;
@@ -403,9 +503,10 @@ body {
   min-width: 280px; 
 }
 .barra-ordenamiento div > select:focus{
-  /* outline: none; */
   outline-color: var(--color-amarillo-suave);
 }
+
+
 .contenedor-listado-productos{
   box-sizing: border-box;
 }
