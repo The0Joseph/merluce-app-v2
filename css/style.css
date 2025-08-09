@@ -517,6 +517,151 @@ body {
   margin-top: 1rem;
 }
 
+/* ------------------------ Pagina: Quienes Somos ------------------------ */
+/* ------------------------ Seccion: Introduccion ------------------------ */
+.seccion-about{
+  background-color: var(--color-primario);
+  margin: 1.5rem 0;
+  border-radius: 24px;
+  color: white;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.seccion-about-imagen{
+}
+.seccion-about-descripcion{
+  margin: 3rem;
+}
+.seccion-about-descripcion h1{
+  font-size: 4.6rem;
+  margin: 0;
+  text-wrap: balance;
+
+}
+.seccion-about-descripcion p{
+  font-size: 1.8rem;
+}
+
+/* ------------------------ Pagina: Quienes Somos ------------------------ */
+/* ------------------------ Seccion: Nuevos valores ------------------------ */
+.seccion-valores h1{
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 4.5rem;
+}
+
+.contenedor-tarjetas{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tarjeta-valor{
+  width: 100%;
+  max-width: 450px;
+  height: 400px;
+  background-color: var(--color-primario);
+  border-radius: 26px;
+}
+.tarjeta-valor h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.8rem;
+  margin: 3rem 0;
+}
+
+/* ------------------------ Pagina: Quienes Somos ------------------------ */
+/* ------------------------ Seccion: Contactanos ------------------------ */
+.seccion-contactanos{
+  margin-bottom: 3rem;
+}
+.seccion-contactanos h1{
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 4.5rem;
+
+}
+.seccion-contactanos form{
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  gap: 3rem;
+}
+
+.seccion-formulario-arriba{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.grupo-input{
+  background-color: var(--color-claro); 
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  
+}
+.grupo-input label{
+  display: block;
+  font-size: 1.2rem;
+}
+.grupo-input input,
+.grupo-input textarea{
+  box-sizing: border-box; 
+  border: none;
+  background-color: transparent;
+   width: 100%;
+}
+.grupo-input input{
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+.grupo-input input:focus,
+.grupo-input textarea:focus{
+  outline: none;
+  border-bottom:1px solid var(--color-primario);
+}
+.grupo-input textarea{
+  min-height: 150px; 
+  resize: vertical; 
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1.2rem;
+
+}
+.seccion-enviar {
+  position: relative;
+}
+.seccion-enviar input{
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  border: none;
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: var(--color-primario);
+  border-radius: 16px;
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+.seccion-enviar input:hover{
+  transform: scale(1.1);
+}
+.seccion-enviar button:active {
+  transform: translateY(0);
+}
+.seccion-enviar-imagen{
+  width: 100%;
+}
+.seccion-enviar-imagen img{
+  width: 100%;
+}
 /* Responsivo */
 
 @media (max-width: 768px) {
