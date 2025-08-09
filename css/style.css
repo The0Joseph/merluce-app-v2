@@ -35,6 +35,11 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.roboto-ligth {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
 /* ------------------------ Cabecera ------------------------ */
 .cabecera {
   height: 60px;
@@ -390,12 +395,12 @@ body {
   background-color: #f7b500;
   color: white; 
   font-size: 16px;
-  padding: 8px 12px;
+  padding: 12px 12px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   margin-top: 1rem;
-  min-width: 180px; 
+  min-width: 280px; 
 }
 .barra-ordenamiento div > select:focus{
   /* outline: none; */
