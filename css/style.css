@@ -178,7 +178,7 @@ body {
 .seccion-productos-titulo h1 {
   font-size: 2.5rem;
 }
-.seccion-productos-titulo button {
+.seccion-productos-titulo a {
   background-color: var(--color-primario);
   border: none;
   padding: 1rem 2rem;
@@ -186,6 +186,13 @@ body {
   border-radius: var(--tamano-border-radius);
   font-size: 1.5rem;
   font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.seccion-productos-titulo a:hover {
+  transform: scale(1.1);
+  
 }
 /* ... tarjeta ... */
 .tarjeta-producto {
