@@ -94,6 +94,24 @@ body {
   font-size: 1.5rem;
 }
 
+.carrito-contenedor {
+  position: relative;
+}
+.carrito-numero-produtos {
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  color: var(--color-negro);
+  background-color: var(--color-claro);
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0.2rem; */
+}
 /* ------------------------ Pagina: Inicio ------------------------ */
 /* ------------------------ Seccion: Introduccion ------------------------ */
 .intro {
@@ -203,11 +221,9 @@ body {
 }
 .seccion-productos-titulo a:hover {
   transform: scale(1.1);
-  
 }
 /* ... tarjeta ... */
 .tarjeta-producto {
-  
   background-color: var(--color-claro);
   border-radius: 10px;
   margin: 1rem 0;
@@ -375,29 +391,28 @@ body {
 
 /* ------------------------ Pagina: Listado de productos ------------------------ */
 /* ------------------------ Seccion: lista de productos ------------------------ */
-.seccion-listado-productos{
+.seccion-listado-productos {
   display: grid;
   grid-template-columns: 300px 1fr;
   gap: 2rem;
   margin: 2rem 0;
 }
-.filtrado-contenedor{
+.filtrado-contenedor {
   background-color: var(--color-claro);
   border-radius: 1.5rem;
 }
 
-.filtrado-contenido{
+.filtrado-contenido {
   margin: 1rem;
 }
-.filtrado-contenido h1{
+.filtrado-contenido h1 {
   text-align: center;
 }
-.filtrado-contenido p{
+.filtrado-contenido p {
   font-size: 1.2rem;
 }
 
-
-.filtrado-apartado{
+.filtrado-apartado {
   display: flex;
   flex-direction: column;
 }
@@ -409,10 +424,10 @@ body {
   padding: 0;
   list-style: none;
 }
-.filtrado-apartado ul li{
+.filtrado-apartado ul li {
   margin: 0.3rem 0;
 }
-.filtrado-apartado label{
+.filtrado-apartado label {
   display: flex;
   align-items: center;
 }
@@ -420,12 +435,12 @@ body {
   width: 20px;
   height: 20px;
   border: 2px solid #2c2c2c;
-  border-radius: 4px; 
+  border-radius: 4px;
   background-color: transparent;
   cursor: pointer;
 }
 .filtrado-apartado input[type="checkbox"]:checked {
-  background-color: var(--color-primario); 
+  background-color: var(--color-primario);
 }
 .filtrado-apartado input[type="checkbox"]:checked::after {
   content: "✓";
@@ -433,10 +448,8 @@ body {
   font-size: 14px;
   display: block;
   text-align: center;
-  line-height: 20px; 
+  line-height: 20px;
 }
-
-
 
 .rango-precio {
   display: flex;
@@ -479,38 +492,36 @@ body {
   margin-top: 1rem;
 }
 
-
-.barra-ordenamiento{
+.barra-ordenamiento {
   background-color: var(--color-claro);
   padding: 5rem 0;
   border-radius: 1rem;
 }
-.barra-ordenamiento div{
-  margin: 0 1rem ;
+.barra-ordenamiento div {
+  margin: 0 1rem;
 }
-.barra-ordenamiento div>h2{
+.barra-ordenamiento div > h2 {
   margin: 0;
 }
-.barra-ordenamiento div > select{
+.barra-ordenamiento div > select {
   background-color: var(--color-primario);
-  color: white; 
+  color: white;
   font-size: 16px;
   padding: 12px 12px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   margin-top: 1rem;
-  min-width: 280px; 
+  min-width: 280px;
 }
-.barra-ordenamiento div > select:focus{
+.barra-ordenamiento div > select:focus {
   outline-color: var(--color-amarillo-suave);
 }
 
-
-.contenedor-listado-productos{
+.contenedor-listado-productos {
   box-sizing: border-box;
 }
-.contenido-listado-productos{
+.contenido-listado-productos {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -519,7 +530,7 @@ body {
 
 /* ------------------------ Pagina: Quienes Somos ------------------------ */
 /* ------------------------ Seccion: Introduccion ------------------------ */
-.seccion-about{
+.seccion-about {
   background-color: var(--color-primario);
   margin: 1.5rem 0;
   border-radius: 24px;
@@ -530,43 +541,42 @@ body {
   display: grid;
   grid-template-columns: 2fr 3fr;
 }
-.seccion-about-imagen{
+.seccion-about-imagen {
 }
-.seccion-about-descripcion{
+.seccion-about-descripcion {
   margin: 3rem;
 }
-.seccion-about-descripcion h1{
+.seccion-about-descripcion h1 {
   font-size: 4.6rem;
   margin: 0;
   text-wrap: balance;
-
 }
-.seccion-about-descripcion p{
+.seccion-about-descripcion p {
   font-size: 1.8rem;
 }
 
 /* ------------------------ Pagina: Quienes Somos ------------------------ */
 /* ------------------------ Seccion: Nuevos valores ------------------------ */
-.seccion-valores h1{
+.seccion-valores h1 {
   text-align: center;
   margin: 3rem 0;
   font-size: 4.5rem;
 }
 
-.contenedor-tarjetas{
+.contenedor-tarjetas {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
 }
 
-.tarjeta-valor{
+.tarjeta-valor {
   width: 100%;
   max-width: 450px;
   height: 400px;
   background-color: var(--color-primario);
   border-radius: 26px;
 }
-.tarjeta-valor h2{
+.tarjeta-valor h2 {
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -576,66 +586,63 @@ body {
 
 /* ------------------------ Pagina: Quienes Somos ------------------------ */
 /* ------------------------ Seccion: Contactanos ------------------------ */
-.seccion-contactanos{
+.seccion-contactanos {
   margin-bottom: 3rem;
 }
-.seccion-contactanos h1{
+.seccion-contactanos h1 {
   text-align: center;
   margin: 3rem 0;
   font-size: 4.5rem;
-
 }
-.seccion-contactanos form{
+.seccion-contactanos form {
   display: grid;
   grid-template-columns: 5fr 2fr;
   gap: 3rem;
 }
 
-.seccion-formulario-arriba{
+.seccion-formulario-arriba {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 }
 
-.grupo-input{
-  background-color: var(--color-claro); 
+.grupo-input {
+  background-color: var(--color-claro);
   border-radius: 16px;
   margin-bottom: 1rem;
   padding: 1rem;
-  
 }
-.grupo-input label{
+.grupo-input label {
   display: block;
   font-size: 1.2rem;
 }
 .grupo-input input,
-.grupo-input textarea{
-  box-sizing: border-box; 
+.grupo-input textarea {
+  box-sizing: border-box;
   border: none;
   background-color: transparent;
-   width: 100%;
+  width: 100%;
 }
-.grupo-input input{
+.grupo-input input {
   padding: 10px 0;
   font-size: 1.2rem;
 }
 .grupo-input input:focus,
-.grupo-input textarea:focus{
+.grupo-input textarea:focus {
   outline: none;
-  border-bottom:1px solid var(--color-primario);
+  border-bottom: 1px solid var(--color-primario);
 }
-.grupo-input textarea{
-  min-height: 150px; 
-  resize: vertical; 
+.grupo-input textarea {
+  min-height: 150px;
+  resize: vertical;
   box-sizing: border-box;
   padding: 10px;
   font-size: 1.2rem;
-
 }
 .seccion-enviar {
   position: relative;
 }
-.seccion-enviar input{
+.seccion-enviar input {
   position: absolute;
   bottom: 1rem;
   right: 0;
@@ -650,16 +657,16 @@ body {
   transition: background-color 0.3s ease, transform 0.2s ease;
   cursor: pointer;
 }
-.seccion-enviar input:hover{
+.seccion-enviar input:hover {
   transform: scale(1.1);
 }
 .seccion-enviar button:active {
   transform: translateY(0);
 }
-.seccion-enviar-imagen{
+.seccion-enviar-imagen {
   width: 100%;
 }
-.seccion-enviar-imagen img{
+.seccion-enviar-imagen img {
   width: 100%;
 }
 /* Responsivo */
@@ -725,7 +732,7 @@ body {
   }
   /* ------------------------ Pagina: Inicio ------------------------ */
   /* ------------------------ Seccion: productos ------------------------ */
-  .seccion-productos-contenido{
+  .seccion-productos-contenido {
     justify-content: center;
   }
 }

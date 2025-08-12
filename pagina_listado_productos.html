@@ -15,7 +15,7 @@
     <title>Productos | Merluce</title>
 </head>
 <body class="contenedor">
-        <!-- Navegacion -->
+    <!-- Navegacion -->
     <header class="cabecera">
 
         <div class="cabecera-logo">
@@ -26,7 +26,9 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="cabecera-acciones">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="carrito-contenedor" id="carrito-contenedor">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
             <i class="fa-solid fa-user"></i>
         </div>
     </header>
@@ -36,11 +38,11 @@
             <div class="filtrado-contenedor">
                 <div class="filtrado-contenido">
                     <h1 class="oleo-script-bold">Productos</h1>
-                    <p class="roboto-ligth">Resultados (9)</p>
+                    <p class="roboto-ligth">Resultados <span id="produtosTotal"></span></p>
                     <div class="filtrado-apartado">
                         <h3 class="roboto-bold">Marca</h3>
-                        <ul class="roboto-ligth">
-                            <li>
+                        <ul class="roboto-ligth" id="contenedor-filtro-marca">
+                            <!-- <li>
                                 <label for="coca_cola">
                                     <input type="checkbox" name="" id="coca_cola">
                                     Coca Cola
@@ -57,23 +59,27 @@
                                     <input type="checkbox" name="" id="inka_chips">
                                     Inka Chips
                                 </label>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <div class="filtrado-apartado">
                         <h3 class="roboto-bold">Precio</h3>
                         <div class="rango-precio">
-                            <input type="range" min="1" max="99" value="50" class="rango">
+                            <input type="range" id="filtro-precio" class="rango"> 
+                            <!-- min="1" max="99" value="50"  -->
                             <div class="valores roboto-regular">
                                 <span>S/ 1</span>
-                                <span>S/ 99.00</span>
+                                <span>
+                                    <span>S/</span>
+                                    <span id="precio-valor"></span>
+                                </span>
                             </div>
                         </div>
                     </div>
                     <div class="filtrado-apartado">
                         <h3 class="roboto-bold">Tipo de producto</h3>
-                        <ul class="roboto-ligth">
-                            <li>
+                        <ul class="roboto-ligth" id="contenedor-filtro-tipo">
+                            <!-- <li>
                                 <label for="bebidas">
                                     <input type="checkbox" name="" id="bebidas">
                                     Bebidas
@@ -84,7 +90,7 @@
                                     <input type="checkbox" name="" id="galletas">
                                     Galletas
                                 </label>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -95,18 +101,18 @@
                  <div class="barra-ordenamiento">
                     <div>
                         <h2 class="roboto-ligth ">Ordenar por:</h2>
-                        <select name="" id="">
+                        <select name="" id="ordenar" >
                             <option value="">Recomendados</option>
-                            <option value="">Precio de menor a mayor</option>
-                            <option value="">Precio de mayor a menor</option>
+                            <option value="asc">Precio de menor a mayor</option>
+                            <option value="desc">Precio de mayor a menor</option>
                         </select>
                     </div>
                  </div>
 
                  <!-- listado de productos -->
-                  <section class="contenido-listado-productos">
+                  <section class="contenido-listado-productos" id="contenedor_productos">
                      <!-- Tarjeta -->
-                     <div class="tarjeta-producto">
+                     <!-- <div class="tarjeta-producto">
                          <div class="tarjeta-producto-contenido">
                              <div class="tarjeta-producto-imagen">
                                  <img src="img/productos/gaseosa_coca_cola.png" alt="">
@@ -119,127 +125,8 @@
                                  <i class="fa-solid fa-plus"></i>
                              </button>
                          </div>
-                     </div>
-                     <!-- Tarjeta -->
-                     <div class="tarjeta-producto">
-                         <div class="tarjeta-producto-contenido">
-                             <div class="tarjeta-producto-imagen">
-                                 <img src="img/productos/gaseosa_coca_cola.png" alt="">
-                             </div>
-                             <h5 class="tarjeta-producto-titulo roboto-regular">Gaseosa Coca Cola 500 ml</h5>
-                         </div>
-                         <div class="tarjeta-producto-footer">
-                             <p>S/ 2.50</p>
-                             <button >
-                                 <i class="fa-solid fa-plus"></i>
-                             </button>
-                         </div>
-                     </div>
-                     <!-- Tarjeta -->
-                     <div class="tarjeta-producto">
-                         <div class="tarjeta-producto-contenido">
-                             <div class="tarjeta-producto-imagen">
-                                 <img src="img/productos/gaseosa_coca_cola.png" alt="">
-                             </div>
-                             <h5 class="tarjeta-producto-titulo roboto-regular">Gaseosa Coca Cola 500 ml</h5>
-                         </div>
-                         <div class="tarjeta-producto-footer">
-                             <p>S/ 2.50</p>
-                             <button >
-                                 <i class="fa-solid fa-plus"></i>
-                             </button>
-                         </div>
-                     </div>
-                     <!-- Tarjeta -->
-                     <div class="tarjeta-producto">
-                         <div class="tarjeta-producto-contenido">
-                             <div class="tarjeta-producto-imagen">
-                                 <img src="img/productos/gaseosa_coca_cola.png" alt="">
-                             </div>
-                             <h5 class="tarjeta-producto-titulo roboto-regular">Gaseosa Coca Cola 500 ml</h5>
-                         </div>
-                         <div class="tarjeta-producto-footer">
-                             <p>S/ 2.50</p>
-                             <button >
-                                 <i class="fa-solid fa-plus"></i>
-                             </button>
-                         </div>
-                     </div>
-                     <!-- Tarjeta -->
-                     <div class="tarjeta-producto">
-                         <div class="tarjeta-producto-contenido">
-                             <div class="tarjeta-producto-imagen">
-                                 <img src="img/productos/gaseosa_coca_cola.png" alt="">
-                             </div>
-                             <h5 class="tarjeta-producto-titulo roboto-regular">Gaseosa Coca Cola 500 ml</h5>
-                         </div>
-                         <div class="tarjeta-producto-footer">
-                             <p>S/ 2.50</p>
-                             <button >
-                                 <i class="fa-solid fa-plus"></i>
-                             </button>
-                         </div>
-                     </div>
-                     <!-- Tarjeta -->
-                     <div class="tarjeta-producto">
-                         <div class="tarjeta-producto-contenido">
-                             <div class="tarjeta-producto-imagen">
-                                 <img src="img/productos/gaseosa_coca_cola.png" alt="">
-                             </div>
-                             <h5 class="tarjeta-producto-titulo roboto-regular">Gaseosa Coca Cola 500 ml</h5>
-                         </div>
-                         <div class="tarjeta-producto-footer">
-                             <p>S/ 2.50</p>
-                             <button >
-                                 <i class="fa-solid fa-plus"></i>
-                             </button>
-                         </div>
-                     </div>
-                     <!-- Tarjeta -->
-                     <div class="tarjeta-producto">
-                         <div class="tarjeta-producto-contenido">
-                             <div class="tarjeta-producto-imagen">
-                                 <img src="img/productos/gaseosa_coca_cola.png" alt="">
-                             </div>
-                             <h5 class="tarjeta-producto-titulo roboto-regular">Gaseosa Coca Cola 500 ml</h5>
-                         </div>
-                         <div class="tarjeta-producto-footer">
-                             <p>S/ 2.50</p>
-                             <button >
-                                 <i class="fa-solid fa-plus"></i>
-                             </button>
-                         </div>
-                     </div>
-                     <!-- Tarjeta -->
-                     <div class="tarjeta-producto">
-                         <div class="tarjeta-producto-contenido">
-                             <div class="tarjeta-producto-imagen">
-                                 <img src="img/productos/gaseosa_coca_cola.png" alt="">
-                             </div>
-                             <h5 class="tarjeta-producto-titulo roboto-regular">Gaseosa Coca Cola 500 ml</h5>
-                         </div>
-                         <div class="tarjeta-producto-footer">
-                             <p>S/ 2.50</p>
-                             <button >
-                                 <i class="fa-solid fa-plus"></i>
-                             </button>
-                         </div>
-                     </div>
-                     <!-- Tarjeta -->
-                     <div class="tarjeta-producto">
-                         <div class="tarjeta-producto-contenido">
-                             <div class="tarjeta-producto-imagen">
-                                 <img src="img/productos/gaseosa_coca_cola.png" alt="">
-                             </div>
-                             <h5 class="tarjeta-producto-titulo roboto-regular">Gaseosa Coca Cola 500 ml</h5>
-                         </div>
-                         <div class="tarjeta-producto-footer">
-                             <p>S/ 2.50</p>
-                             <button >
-                                 <i class="fa-solid fa-plus"></i>
-                             </button>
-                         </div>
-                     </div>
+                     </div> -->
+
                   </section>
             </section>
         </div>
@@ -271,6 +158,6 @@
             <button class="subscribete-boton">Suscribirse</button>
         </div>
     </footer>
-    
+    <script src="/js/script.js"></script>
 </body>
 </html>
