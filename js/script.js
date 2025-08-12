@@ -24,7 +24,7 @@ function mostrarProductos(productos) {
         div.innerHTML = `
             <div class="tarjeta-producto-contenido">
                 <div class="tarjeta-producto-imagen">
-                    <img src="${producto.imagen}" alt="">
+                    <img src="${producto.imagen}" alt="" loading="lazy" decoding="async">
                 </div>
                 <h5 class="tarjeta-producto-titulo roboto-regular">${producto.nombre_producto}</h5>
             </div>
