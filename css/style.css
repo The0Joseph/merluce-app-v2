@@ -15,6 +15,7 @@ body {
 .contenedor {
   max-width: 1300px;
   margin: 0 auto;
+  position: relative;
 }
 
 /* ------------------------ Fuentes ------------------------ */
@@ -50,6 +51,145 @@ body {
   font-weight: 200;
   font-style: normal;
 }
+
+/* ------------------------ Pagina: Login ------------------------ */
+/* ------------------------ Seccion: Img ------------------------ */
+.main-login {
+  background-color: var(--color-primario) !important;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+
+
+/* ------------------------ Pagina: Login ------------------------ */
+/* ------------------------ Seccion: Formulario ------------------------ */
+
+.main-login section {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  height: 100%;
+  align-items: center;
+}
+
+.imagen-login {
+  width: 100%;
+    position: relative;
+    height: 100%;
+}
+.imagen-login img {
+  width: 100%;
+    position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* ------------------------ Pagina: Login ------------------------ */
+/* ------------------------ Seccion: Formulario ------------------------ */
+
+.contenedor-login {
+  background-color: var(--color-claro);
+  border-radius: 1rem;
+  padding: 1rem 5rem;
+  box-sizing: content-box;
+}
+.contenedor-login h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.contenido-login {
+  margin: 1rem 0;
+}
+.input-grupo-login{
+  display: flex;
+  border: 2px solid var(--color-primario);
+  border-radius: 1.3rem;
+  margin: 1rem 0;
+}
+.input-icon-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--color-primario);
+  border-radius: 1.1rem;
+  color: var(--color-claro);
+}
+
+.contenido-login input[type="email"],
+.contenido-login input[type="password"] {
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding: 1.1rem 0.8rem;
+  font-size: 1.2rem;
+  
+  border-radius: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.contenido-login input[type="email"]:focus,
+.contenido-login input[type="password"]:focus {
+  outline: none;
+  outline-color: var(--color-claro);
+}
+
+.boton-autenticacion {
+  background-color: var(--color-primario);
+  padding: 1rem;
+  display: block;
+  border-radius: 1rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.enlaces-login {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+}
+.enlaces-login a {
+  text-decoration: none;
+  color: var(--color-negro);
+  font-size: 0.8rem;
+  /* margin-top: 1rem; */
+}
+.enlaces-login a:hover {
+  text-decoration: underline;
+}
+
+.separador {
+  width: 100%;
+  margin: 2.5rem auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: var(--color-negro);
+}
+
+/* Líneas */
+.separador::before,
+.separador::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+}
+
+/* Círculo central */
+.punto {
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  background: #faf3df; /* mismo color del fondo */
+  display: inline-block;
+}
+
 /* ------------------------ Cabecera ------------------------ */
 .cabecera {
   height: 60px;
@@ -117,7 +257,7 @@ body {
   align-items: center;
   /* padding: 0.2rem; */
 }
-.mi-cuenta a{
+.mi-cuenta a {
   color: white;
 }
 /* ------------------------ Pagina: Inicio ------------------------ */
@@ -678,61 +818,58 @@ body {
   width: 100%;
 }
 
-
 /* ------------------------ Pagina: Mi cuenta ------------------------ */
 /* ------------------------ Seccion: sidebar ------------------------ */
-.contenedor-titulo-pagina{
+.contenedor-titulo-pagina {
   background-color: var(--color-claro);
   text-align: center;
 }
-.contenedor-titulo-pagina h1{
+.contenedor-titulo-pagina h1 {
   padding: 1rem 0;
 }
 
-.contenedor-mi-cuenta{
+.contenedor-mi-cuenta {
   display: flex;
   gap: 100px;
 }
-.contenido-mi-cuenta{
+.contenido-mi-cuenta {
   width: 100%;
 }
 
-.contenedor-navegacion-mi-cuenta ul{
+.contenedor-navegacion-mi-cuenta ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.contenedor-navegacion-mi-cuenta ul li{
+.contenedor-navegacion-mi-cuenta ul li {
   background-color: var(--color-claro);
   padding: 1rem;
   font-size: 1.3rem;
   border-radius: 1.2rem;
   width: 250px;
   margin: 2rem 0;
-
 }
-.contenedor-navegacion-mi-cuenta ul li:first-child{
+.contenedor-navegacion-mi-cuenta ul li:first-child {
   background-color: var(--color-primario);
 }
 
 /* ------------------------ Pagina: Formulario ------------------------ */
 /* ------------------------ Seccion: sidebar ------------------------ */
-.mi-cuenta-imagen{
+.mi-cuenta-imagen {
   width: 150px;
   border-radius: 50%;
   border: 3px solid var(--color-primario);
 }
-.mi-cuenta-imagen img{
+.mi-cuenta-imagen img {
   width: 100%;
 }
-.seccion-formulario{
+.seccion-formulario {
   margin-top: 1rem;
 }
-.seccion-formulario-arriba-mi-cuenta{
+.seccion-formulario-arriba-mi-cuenta {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
-
 }
 .grupo-input-mi-cuenta {
   border-radius: 16px;
@@ -744,7 +881,7 @@ body {
   font-weight: 500;
   margin-bottom: 1rem;
 }
-.grupo-input-mi-cuenta input{
+.grupo-input-mi-cuenta input {
   box-sizing: border-box;
   border: none;
   background-color: transparent;
@@ -758,9 +895,6 @@ body {
   outline: none;
   outline-color: var(--color-claro);
 }
-
-
-
 
 /* Responsivo */
 

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,102 +12,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fuente Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <title>Inicio | Merluce</title>
 </head>
-<body class="contenedor">
-    <!-- Navegacion -->
-    <header class="cabecera">
-
-        <div class="cabecera-logo">
-            LOGO
-        </div>
-        <div class="cabecera-buscador">
-            <input type="text">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="cabecera-acciones">
-            <div class="carrito-contenedor" id="carrito-contenedor">
-                <i class="fa-solid fa-cart-shopping"></i>
+<body>
+    <main class="main-login">
+        <section class="contenedor">
+            <div class="imagen-login">
+                <img src="/img/imagen_introduccion.png" alt="">
             </div>
-            <div class="mi-cuenta">
-                <a href="/mi_cuenta.html">
-                    <i class="fa-solid fa-user"></i>
+            <div class="contenedor-login">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <h3 class="roboto-bold">Inicia sesión con</h3>
+                <a href="http://www.google.com" class="boton-autenticacion roboto-bold ">
+                    Google
                 </a>
-            </div>
-        </div>
-    </header>
-    <!-- Introduccion -->
-    <section class="intro">
-        <div class="intro-contenido">
-            <div class="intro-texto">
-                <h1 class="intro-titulo oleo-script-regular ">Descubre Merluce</h1>
-                <p class="intro-parrafo roboto-regular ">Merluce es tu tienda de abarrotes de confianza, con mas de 10 años ofreciendo productos escenciales, atención amable y un servicio con valores como la responsabilidad y la dedicación.</p>
-                <button class="intro-boton-accion">Explorar</button>
-            </div>
-            <div class="intro-imagen">
-                <img src="img/imagen_introduccion.png" alt="" loading="lazy" decoding="async">
-            </div>
-        </div>
-
-    </section>
-    <!-- Contenido -->
-    <main>
-        <div class="seccion-productos">
-            <div class="seccion-productos-titulo">
-                <h1 class="oleo-script-bold">Mis Productos</h1>
-                <a href="/pagina_listado_productos.html" class="roboto-regular">Ver más</a>
-            </div>
-            <div class="seccion-productos-contenido roboto-regular" id="contenedor_productos">
-
-                <!-- <div class="tarjeta-producto">
-                    <div class="tarjeta-producto-contenido">
-                        <div class="tarjeta-producto-imagen">
-                            <img src="" alt="">
+                <!-- Separador -->
+                <div class="separador" role="separator" aria-label="Separador">
+                    <span class="punto"></span>
+                </div>
+                <!-- Fomulario Login -->
+                <div class="contenido-login">
+                    <div class="input-grupo-login">
+                        <input type="email" name="" id="" placeholder="Correo">
+                        <div class="input-icon-login">
+                            <i class="fa-solid fa-envelope"></i>
                         </div>
-                        <h5 class="tarjeta-producto-titulo roboto-regular"></h5>
                     </div>
-                    <div class="tarjeta-producto-footer">
-                        <p>S/</p>
-                        <button >
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
+                    <div class="input-grupo-login">
+                        <input type="password" name="" id="" placeholder="Contraseña">
+                        <div class="input-icon-login">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
                     </div>
-                </div> -->
-
+                    <div class="enlaces-login">
+                        <label for="" class="roboto-ligth">
+                            <input class="filtro-marca" type="checkbox" >
+                            Recordar contraseña
+                        </label>
+                        <a href="#" class="roboto-ligth">Olvidaste tu contraseña?</a>
+                    </div>
+                    <a href="/home.html" class="boton-autenticacion roboto-bold ">Iniciar cesión</a>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
-    <!-- footer -->
-    <footer class="footer-contenedor roboto-regular">
-        <div>
-            LOGO
-        </div>
-        <div>
-            <p>+51 914 505 101</p>
-            <p>merluce.com</p>
-            <p>Av. José Olaya, Pucalá, Chiclayo, Perú</p>
-        </div>
-        <div class="grupo-links">
-            <a href="#" class="politica-link">Política de Privacidad</a>
-            <a href="#" class="politica-link">Declaración de Accesibilidad</a>
-            <a href="#" class="politica-link">Política de Envío</a>
-            <a href="#" class="politica-link">Términos y Condiciones</a>
-            <a href="#" class="politica-link">Política de Reembolso</a>
-        </div>
-        <div class="seccion-subscripcion">
-            <label for="text-email">Email</label>
-            <input type="text" class="caja-subscripcion" id="text-email">
-            <div class="caja-check-contenedor">
-                <input type="checkbox" class="caja-check" id="subscribete-check">
-                <label for="subscribete-check" class="caja-check-label">Sí, suscribirse</label>
-            </div>
-            <button class="subscribete-boton">Suscribirse</button>
-        </div>
-    </footer>
-
-    <script src="/js/script.js">
-
-    </script>
 </body>
 </html>
