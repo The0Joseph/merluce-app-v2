@@ -192,7 +192,7 @@ body {
 
 /* ------------------------ Cabecera ------------------------ */
 .cabecera {
-  height: 60px;
+  height: 70px;
   display: grid;
   grid-template-columns: 2fr 3fr 1fr;
   background-color: var(--color-primario);
@@ -202,6 +202,11 @@ body {
   justify-content: space-between;
   padding: 0.6rem 2rem;
   margin-top: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  box-sizing: border-box;
 }
 .cabecera-logo {
 }
@@ -323,6 +328,7 @@ body {
   transition: all 0.3s ease;
   text-transform: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
 }
 
 .intro-boton-accion:hover {
