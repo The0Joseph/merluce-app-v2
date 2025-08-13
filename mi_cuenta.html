@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi cuenta | Merluce</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,8 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fuente Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <title>Quiénes Somos | Merluce</title>
 </head>
 <body class="contenedor">
     <!-- Navegacion -->
@@ -35,73 +34,59 @@
             </div>
         </div>
     </header>
-    <!-- Introduccion -->
-    <section class="seccion-about">
-        <div class="seccion-about-imagen">
-            <img src="" alt="">
-        </div>
-        <div>
-            <div class="seccion-about-descripcion">
-                <h1 class="oleo-script-bold">Quiénes Somos?</h1>
-                <p class="roboto-regular">Merluce es una tienda de abarrotes con más de 10 años de experiencia, reconocida por su trato cercano y su compromiso con la comunidad. Ofrece productos esenciales de calidad en un ambiente cálido y confiable, manteniendo siempre un enfoque en la responsabilidad y la atención personalizada.</p>
-            </div>
-        </div>
 
-    </section>
-
-    <!-- Nuestros valores -->
-    <section class="seccion-valores">
-        <h1 class="oleo-script-bold">Nuestros Valores</h1>
-        <div class="contenedor-tarjetas">
-            <div class="tarjeta-valor">
-                <h2 class="tarjeta-valor-titulo roboto-bold">confianza</h2>
-            </div>
-            <div class="tarjeta-valor">
-                <h2 class="tarjeta-valor-titulo roboto-bold">calidad</h2>
-            </div>
-            <div class="tarjeta-valor">
-                <h2 class="tarjeta-valor-titulo roboto-bold">calidez</h2>
-            </div>
+    <main>
+        <div class="contenedor-titulo-pagina ">
+            <h1 class="oleo-script-light">Mi cuenta</h1>
         </div>
-    </section>
-
-    <!-- Contactanos -->
-    <section class="seccion-contactanos">
-        <h1 class="oleo-script-bold">Contáctanos</h1>
-        <form action="#">
-            <div>
-                <div class="seccion-formulario-arriba">
-                    <div class="grupo-input roboto-ligth">
-                        <label for="">Apellido</label>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div class="grupo-input roboto-ligth">
-                        <label for="">Número</label>
-                        <input type="text" name="" id="">
+        <section class="contenedor-mi-cuenta">
+            <!-- Sidebar -->
+            <div class="contenedor-navegacion-mi-cuenta roboto-regular">
+                <ul>
+                    <li>Información Personal</li>
+                    <li>Mis ordenes</li>
+                    <li>Métodos de pago</li>
+                    <li>Información Personal</li>
+                </ul>
+            </div>
+            <!-- Contenido -->
+            <div class="contenido-mi-cuenta">
+                <div class="mi-cuenta-foto-perfil">
+                    <div class="mi-cuenta-imagen">
+                        <img src="/img/productos/gaseosa_coca_cola.png" alt="" loading="lazy" decoding="async">
                     </div>
                 </div>
-                <div>
-                    <div class="grupo-input roboto-ligth">
-                        <label for="">Nombre</label>
-                        <input type="text" name="" id="">
+                <div class="seccion-formulario">
+                    <div class="seccion-formulario-arriba-mi-cuenta">
+                        <div class="grupo-input-mi-cuenta roboto-ligth">
+                            <label for="">Nombre*</label>
+                            <input type="text" name="" value="Adrian" id="">
+                        </div>
+                        <div class="grupo-input-mi-cuenta roboto-ligth">
+                            <label for="">Apellido*</label>
+                            <input type="text" name="" value="Florez Torres" id="">
+                        </div>
                     </div>
-                    <div class="grupo-input roboto-ligth">
-                        <label for="">Mensaje</label>
-                        <textarea name="" id=""></textarea>
+                    <div>
+                        <div class="grupo-input-mi-cuenta roboto-ligth">
+                            <label for="">Correo*</label>
+                            <input type="email" name="" value="adflortor@gmail.com" id="">
+                        </div>
+                        <div class="grupo-input-mi-cuenta roboto-ligth">
+                            <label for="">Número*</label>
+                            <input type="text" name="" value="+51 929 123 274" id="">
+                        </div>
+                        <div class="grupo-input-mi-cuenta roboto-ligth">
+                            <label for="">Genero*</label>
+                            <input type="text" name="" value="Hombre">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="seccion-enviar">
-                <div class="seccion-enviar-imagen">
-                    <img src="img/imagen_introduccion.png" alt="">
-                </div>
-                <input type="submit" value="Enviar" class="roboto-bold">
-            </div>
-        </form>
+        </section>
+    </main>
 
-    </section>
-
-    <!-- footer -->
+        <!-- footer -->
     <footer class="footer-contenedor roboto-regular">
         <div>
             LOGO
@@ -128,6 +113,7 @@
             <button class="subscribete-boton">Suscribirse</button>
         </div>
     </footer>
-    
+
+
 </body>
 </html>

@@ -18,6 +18,11 @@ body {
 }
 
 /* ------------------------ Fuentes ------------------------ */
+.oleo-script-light {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 200;
+  font-style: normal;
+}
 .oleo-script-regular {
   font-family: "Oleo Script", system-ui;
   font-weight: 400;
@@ -111,6 +116,9 @@ body {
   justify-content: center;
   align-items: center;
   /* padding: 0.2rem; */
+}
+.mi-cuenta a{
+  color: white;
 }
 /* ------------------------ Pagina: Inicio ------------------------ */
 /* ------------------------ Seccion: Introduccion ------------------------ */
@@ -669,6 +677,91 @@ body {
 .seccion-enviar-imagen img {
   width: 100%;
 }
+
+
+/* ------------------------ Pagina: Mi cuenta ------------------------ */
+/* ------------------------ Seccion: sidebar ------------------------ */
+.contenedor-titulo-pagina{
+  background-color: var(--color-claro);
+  text-align: center;
+}
+.contenedor-titulo-pagina h1{
+  padding: 1rem 0;
+}
+
+.contenedor-mi-cuenta{
+  display: flex;
+  gap: 100px;
+}
+.contenido-mi-cuenta{
+  width: 100%;
+}
+
+.contenedor-navegacion-mi-cuenta ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contenedor-navegacion-mi-cuenta ul li{
+  background-color: var(--color-claro);
+  padding: 1rem;
+  font-size: 1.3rem;
+  border-radius: 1.2rem;
+  width: 250px;
+  margin: 2rem 0;
+
+}
+.contenedor-navegacion-mi-cuenta ul li:first-child{
+  background-color: var(--color-primario);
+}
+
+/* ------------------------ Pagina: Formulario ------------------------ */
+/* ------------------------ Seccion: sidebar ------------------------ */
+.mi-cuenta-imagen{
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--color-primario);
+}
+.mi-cuenta-imagen img{
+  width: 100%;
+}
+.seccion-formulario{
+  margin-top: 1rem;
+}
+.seccion-formulario-arriba-mi-cuenta{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+
+}
+.grupo-input-mi-cuenta {
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+.grupo-input-mi-cuenta label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.grupo-input-mi-cuenta input{
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding: 1.1rem 0.8rem;
+  font-size: 1.2rem;
+  border: 2px solid var(--color-primario);
+  border-radius: 1.3rem;
+}
+.grupo-input-mi-cuenta input:focus {
+  outline: none;
+  outline-color: var(--color-claro);
+}
+
+
+
+
 /* Responsivo */
 
 @media (max-width: 768px) {
