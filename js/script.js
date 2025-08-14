@@ -5,10 +5,12 @@ const productos = [
     { id_producto: 3, nombre_producto: 'Gaseosa Inka Kola 500 ml', precio: 2.50, marca: 'inka cola', tipo: 'bebida', imagen: 'img/productos/gaseosa_inca_kola.png' },
     { id_producto: 4, nombre_producto: 'Gaseosa Sprite Regular 500 ml', precio: 2.50, marca: 'sprite', tipo: 'bebida', imagen: 'img/productos/gaseosa_sprite.png' },
     { id_producto: 5, nombre_producto: 'Pack 1 (Keke Pinguino Marinela)', precio: 5.50, marca: 'bimbo', tipo: 'galleta', imagen: 'img/productos/pinguinos.png' },
-    { id_producto: 6, nombre_producto: 'Pack (2 Inka Chips Queso y Cebolla)', precio: 12.50, marca: 'inka chips', tipo: 'snacks', imagen: 'img/productos/papas_inkas_chips.png' },
+    { id_producto: 6, nombre_producto: 'Pack (2 Inka Chips Queso y Cebolla)', precio: 12.50, marca: 'inka chips', tipo: 'snacks', imagen: 'img/productos/papas_inkas_chips_queso_cebolla.png' },
     { id_producto: 7, nombre_producto: 'Pack 2 (Papas Kona Select Queso 100 Gr)', precio: 10.90, marca: 'kona', tipo: 'snacks', imagen: 'img/productos/papas_kona.png' },
     { id_producto: 8, nombre_producto: 'Pack (2 Papas Jappy Snacks BBQ 200gr)', precio: 11.50, marca: 'jappy', tipo: 'snacks', imagen: 'img/productos/papas_jappy_snack.png' },
-    // { id_producto: 9, nombre_producto: '', precio: '', marca: '', tipo: '', imagen: '' },
+    // { id_producto: 9, nombre_producto: '', precio: '', marca: '', tipo: '', imagen: 'img/productos/' },
+    // { id_producto: 10, nombre_producto: '', precio: '', marca: '', tipo: '', imagen: '' },
+    // { id_producto: 11, nombre_producto: '', precio: '', marca: '', tipo: '', imagen: '' },
 ]
 
 function capitalizarPrimeraLetra(texto) {
