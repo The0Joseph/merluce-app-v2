@@ -973,6 +973,54 @@ body {
     position: relative;
   }
 
+  /* ------------------------ Pagina: quienes somos ------------------------ */
+  /* ------------------------ Seccion: introduccion ------------------------ */
+  .seccion-about{
+    display: block;
+  }
+  .seccion-about-descripcion{
+    margin: 2rem;
+  }
+
+  .seccion-about-imagen{
+    display: none;
+  }
+  .seccion-about-descripcion h1{
+    font-size: 4rem;
+  }
+  .seccion-about-descripcion p{
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+    line-height: 1.9rem;
+  }
+  .seccion-valores h1 {
+    font-size: 3rem;
+  }
+  .tarjeta-valor{
+    height: 130px
+  }
+
+  .tarjeta-valor h2{
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+  .seccion-contactanos h1 {
+    font-size: 3rem;
+  }
+  .seccion-contactanos form{
+    display: block;
+  }
+  .seccion-enviar-imagen{
+    display: none;
+  }
+  .seccion-enviar input {
+    position: relative;
+    margin-top: 1rem;
+    padding: 0.9rem 3rem;
+    font-size: 1.5rem;
+    width: auto;
+  }
+
   /* ------------------------ Seccion: Footer ------------------------ */
   .footer-contenedor {
     grid-template-columns: 1fr;
@@ -990,10 +1038,10 @@ body {
 
 
 
-
+  /* ------------------------ Pagina: mi cuenta ------------------------ */
+  /* ------------------------ Seccion: sidebar ------------------------ */
   .contenedor-navegacion-mi-cuenta ul{
     display: grid;
-    /* flex-wrap: wrap; */
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 
