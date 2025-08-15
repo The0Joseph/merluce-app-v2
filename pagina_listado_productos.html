@@ -42,59 +42,70 @@
                 <div class="filtrado-contenido">
                     <h1 class="oleo-script-bold">Productos</h1>
                     <p class="roboto-ligth">Resultados <span id="produtosTotal"></span></p>
-                    <div class="filtrado-apartado">
-                        <h3 class="roboto-bold">Marca</h3>
-                        <ul class="roboto-ligth" id="contenedor-filtro-marca">
-                            <!-- <li>
-                                <label for="coca_cola">
-                                    <input type="checkbox" name="" id="coca_cola">
-                                    Coca Cola
-                                </label>
-                            </li>
-                            <li>
-                                <label for="fanta">
-                                    <input type="checkbox" name="" id="fanta">
-                                    Fanta
-                                </label>
-                            </li>
-                            <li>
-                                <label for="inka_chips">
-                                    <input type="checkbox" name="" id="inka_chips">
-                                    Inka Chips
-                                </label>
-                            </li> -->
-                        </ul>
-                    </div>
-                    <div class="filtrado-apartado">
-                        <h3 class="roboto-bold">Precio</h3>
-                        <div class="rango-precio">
-                            <input type="range" id="filtro-precio" class="rango"> 
-                            <!-- min="1" max="99" value="50"  -->
-                            <div class="valores roboto-regular">
-                                <span>S/ 1</span>
-                                <span>
-                                    <span>S/</span>
-                                    <span id="precio-valor"></span>
-                                </span>
+                    <div class="filtrado-seccion">
+                        <div class="filtrado-apartado" id="seccion-marca">
+                            <h3 class="roboto-bold">Marca</h3>
+                            <ul class="roboto-ligth" id="contenedor-filtro-marca">
+                                <!-- <li>
+                                    <label for="coca_cola">
+                                        <input type="checkbox" name="" id="coca_cola">
+                                        Coca Cola
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="fanta">
+                                        <input type="checkbox" name="" id="fanta">
+                                        Fanta
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="inka_chips">
+                                        <input type="checkbox" name="" id="inka_chips">
+                                        Inka Chips
+                                    </label>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="filtrado-apartado" id="seccion-precio">
+                            <h3 class="roboto-bold">Precio</h3>
+                            <div class="rango-precio">
+                                <input type="range" id="filtro-precio" class="rango"> 
+                                <!-- min="1" max="99" value="50"  -->
+                                <div class="valores roboto-regular">
+                                    <span>S/ 1</span>
+                                    <span>
+                                        <span>S/</span>
+                                        <span id="precio-valor"></span>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="filtrado-apartado">
-                        <h3 class="roboto-bold">Tipo de producto</h3>
-                        <ul class="roboto-ligth" id="contenedor-filtro-tipo">
-                            <!-- <li>
-                                <label for="bebidas">
-                                    <input type="checkbox" name="" id="bebidas">
-                                    Bebidas
-                                </label>
-                            </li>
-                            <li>
-                                <label for="galletas">
-                                    <input type="checkbox" name="" id="galletas">
-                                    Galletas
-                                </label>
-                            </li> -->
-                        </ul>
+                        <div class="filtrado-apartado" id="seccion-tipo">
+                            <h3 class="roboto-bold">Tipo de producto</h3>
+                            <ul class="roboto-ligth" id="contenedor-filtro-tipo">
+                                <!-- <li>
+                                    <label for="bebidas">
+                                        <input type="checkbox" name="" id="bebidas">
+                                        Bebidas
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="galletas">
+                                        <input type="checkbox" name="" id="galletas">
+                                        Galletas
+                                    </label>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="barra-ordenamiento" id="seccion-ordenamiento">
+                            <div>
+                                <select name="" id="ordenar" >
+                                    <option value="">Recomendados</option>
+                                    <option value="asc">Precio de menor a mayor</option>
+                                    <option value="desc">Precio de mayor a menor</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

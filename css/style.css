@@ -81,14 +81,13 @@ body {
   right: 0;
 } */
 
-.imagen-login img{
+.imagen-login img {
   width: 100%;
   height: 100%;
-  object-fit: cover;          /* llena el contenedor */
-  object-position: right bottom;/* ajusta el foco */
+  object-fit: cover; /* llena el contenedor */
+  object-position: right bottom; /* ajusta el foco */
   display: block;
 }
-
 
 /* ------------------------ Pagina: Login ------------------------ */
 /* ------------------------ Seccion: Formulario ------------------------ */
@@ -692,6 +691,9 @@ body {
   flex-wrap: wrap;
   margin-top: 1rem;
 }
+  #seccion-ordenamiento{
+    display: none;
+  }
 
 /* ------------------------ Pagina: Quienes Somos ------------------------ */
 /* ------------------------ Seccion: Introduccion ------------------------ */
@@ -878,7 +880,6 @@ body {
   border-radius: 50%;
   border: 3px solid var(--color-primario);
   overflow: hidden;
-
 }
 .mi-cuenta-imagen img {
   width: 100%;
@@ -917,7 +918,7 @@ body {
 }
 
 /* Responsivo */
-@media (max-width: 900px){
+@media (max-width: 900px) {
   /* ------------------------ Pagina: Login ------------------------ */
   /* ------------------------ Seccion: formulario ------------------------ */
   .contenedor-login {
@@ -975,20 +976,20 @@ body {
 
   /* ------------------------ Pagina: quienes somos ------------------------ */
   /* ------------------------ Seccion: introduccion ------------------------ */
-  .seccion-about{
+  .seccion-about {
     display: block;
   }
-  .seccion-about-descripcion{
+  .seccion-about-descripcion {
     margin: 2rem;
   }
 
-  .seccion-about-imagen{
+  .seccion-about-imagen {
     display: none;
   }
-  .seccion-about-descripcion h1{
+  .seccion-about-descripcion h1 {
     font-size: 4rem;
   }
-  .seccion-about-descripcion p{
+  .seccion-about-descripcion p {
     font-size: 1.5rem;
     margin-top: 0.3rem;
     line-height: 1.9rem;
@@ -996,21 +997,21 @@ body {
   .seccion-valores h1 {
     font-size: 3rem;
   }
-  .tarjeta-valor{
-    height: 130px
+  .tarjeta-valor {
+    height: 130px;
   }
 
-  .tarjeta-valor h2{
+  .tarjeta-valor h2 {
     margin: 1rem 0;
     font-size: 1rem;
   }
   .seccion-contactanos h1 {
     font-size: 3rem;
   }
-  .seccion-contactanos form{
+  .seccion-contactanos form {
     display: block;
   }
-  .seccion-enviar-imagen{
+  .seccion-enviar-imagen {
     display: none;
   }
   .seccion-enviar input {
@@ -1019,6 +1020,46 @@ body {
     padding: 0.9rem 3rem;
     font-size: 1.5rem;
     width: auto;
+  }
+
+  /* ------------------------ Pagina: paginas lsitado productos ------------------------ */
+  /* ------------------------ Seccion: filtrado ------------------------ */
+  .seccion-listado-productos {
+    grid-template-columns: 1fr;
+  }
+  
+.filtrado-seccion{
+  display: flex;
+  flex-wrap: wrap;
+
+  /* flex-direction: column; */
+}
+
+  #seccion-marca {
+    order: 1;
+    width: 50%;
+  }
+  #seccion-tipo {
+    order: 2;
+    width: 50%;
+  }
+  #seccion-precio {
+    order: 3;
+    width: 50%;
+  }
+  #seccion-ordenamiento{
+    display: block;
+    order: 4;
+    width: 50%;
+
+  }
+
+  .barra-ordenamiento div > select{
+    min-width: auto;
+  }
+  .barra-ordenamiento {
+    padding: 1rem 0;
+    display: none;
   }
 
   /* ------------------------ Seccion: Footer ------------------------ */
@@ -1036,23 +1077,20 @@ body {
     justify-content: center;
   }
 
-
-
   /* ------------------------ Pagina: mi cuenta ------------------------ */
   /* ------------------------ Seccion: sidebar ------------------------ */
-  .contenedor-navegacion-mi-cuenta ul{
+  .contenedor-navegacion-mi-cuenta ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-
   }
-  .contenedor-navegacion-mi-cuenta ul li{
+  .contenedor-navegacion-mi-cuenta ul li {
     font-size: 1rem;
     width: auto;
     margin: 0.5rem 0;
     /* max-width: 250px; */
   }
-  .contenedor-mi-cuenta{
+  .contenedor-mi-cuenta {
     flex-direction: column;
   }
 }
