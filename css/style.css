@@ -936,7 +936,7 @@ body {
   /* ------------------------ Pagina: Login ------------------------ */
   /* ------------------------ Seccion: formulario ------------------------ */
   .contenedor-login {
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
   }
 
   .main-login section {
@@ -1056,6 +1056,7 @@ body {
 
   .barra-ordenamiento div > select{
     min-width: auto;
+    width: 100%;
   }
   .barra-ordenamiento {
     padding: 1rem 0;
@@ -1096,6 +1097,9 @@ body {
 }
 
 @media (max-width: 576px) {
+  .contenedor{
+    margin: 0 1rem;
+  }
   /* ------------------------ Pagina: Login ------------------------ */
   /* ------------------------ Seccion: formulario ------------------------ */
 
@@ -1121,5 +1125,15 @@ body {
   /* ------------------------ Seccion: productos ------------------------ */
   .seccion-productos-contenido {
     justify-content: center;
+  }
+
+
+
+  .seccion-productos-titulo h1{
+    font-size: 1.6rem;
+  }
+  .seccion-productos-titulo a{
+        padding: 0.5rem ;
+        font-size: 1.3rem;
   }
 }
