@@ -219,7 +219,7 @@ body {
   text-decoration: none;
   color: var(--color-claro);
 }
-.cabecera-logo img{
+.cabecera-logo img {
   width: 160px;
 }
 
@@ -955,6 +955,51 @@ body {
   .main-login {
     height: 100dvh;
   }
+
+  /* ------------------------ Pagina: paginas lsitado productos ------------------------ */
+  /* ------------------------ Seccion: filtrado ------------------------ */
+.seccion-listado-productos {
+    grid-template-columns: 1fr;
+  }
+
+  .filtrado-seccion {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #seccion-marca {
+    order: 1;
+    width: 50%;
+  }
+  #seccion-tipo {
+    order: 2;
+    width: 50%;
+  }
+  #seccion-precio {
+    order: 3;
+    width: 50%;
+  }
+  #seccion-ordenamiento {
+    display: block;
+    order: 4;
+    width: 50%;
+  }
+
+  .barra-ordenamiento div > select {
+    min-width: auto;
+    width: 100%;
+  }
+  .barra-ordenamiento {
+    padding: 1rem 0;
+    display: none;
+  }
+
+  /* tarjetas */
+
+.tarjeta-producto {
+  max-width: 200px;
+}
+
 }
 @media (max-width: 768px) {
   /* ------------------------ Pagina: Login ------------------------ */
@@ -1052,43 +1097,7 @@ body {
 
   /* ------------------------ Pagina: paginas lsitado productos ------------------------ */
   /* ------------------------ Seccion: filtrado ------------------------ */
-  .seccion-listado-productos {
-    grid-template-columns: 1fr;
-  }
-
-  .filtrado-seccion {
-    display: flex;
-    flex-wrap: wrap;
-
-    /* flex-direction: column; */
-  }
-
-  #seccion-marca {
-    order: 1;
-    width: 50%;
-  }
-  #seccion-tipo {
-    order: 2;
-    width: 50%;
-  }
-  #seccion-precio {
-    order: 3;
-    width: 50%;
-  }
-  #seccion-ordenamiento {
-    display: block;
-    order: 4;
-    width: 50%;
-  }
-
-  .barra-ordenamiento div > select {
-    min-width: auto;
-    width: 100%;
-  }
-  .barra-ordenamiento {
-    padding: 1rem 0;
-    display: none;
-  }
+  
 
   /* ------------------------ Seccion: Footer ------------------------ */
   .footer-contenedor {
@@ -1166,5 +1175,38 @@ body {
   }
   .tarjeta-valor-img {
     width: 60px;
+  }
+  
+  
+  /* ------------------------ Pagina: listaod de producto ------------------------ */
+  /* ------------------------ Seccion: listaod de producto ------------------------ */
+  .tarjeta-producto {
+  max-width: 110px;
+  }
+  .tarjeta-producto-contenido {
+    padding: 0.5rem;
+  }
+  .tarjeta-producto-imagen {
+  }
+  .tarjeta-producto-imagen img {
+  }
+  .tarjeta-producto-titulo {
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+  }
+  .tarjeta-producto-footer {
+    font-size: 0.9rem;
+    padding: 0 0.3rem;
+  }
+  .tarjeta-producto-footer p {
+  }
+  .tarjeta-producto-footer button {
+    width: 30px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+  .tarjeta-producto-footer button:hover {
+  }
+  .tarjeta-producto-footer button:active {
   }
 }
