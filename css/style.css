@@ -322,6 +322,7 @@ body {
 }
 .icon-bars{
   font-size: 2rem;
+  display: none;
 }
 .overlay-content > .cabecera-logo{
   margin-bottom: 3rem;
@@ -1080,6 +1081,9 @@ body {
 
 }
 @media (max-width: 768px) {
+  .icon-bars{
+      display: block;
+  }
   /* ------------------------ Pagina: Login ------------------------ */
   /* ------------------------ Seccion: formulario ------------------------ */
   .contenedor-login {
