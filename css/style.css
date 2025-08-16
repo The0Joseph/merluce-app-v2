@@ -209,7 +209,7 @@ body {
   margin-top: 1rem;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 8;
   width: 100%;
   box-sizing: border-box;
 }
@@ -276,6 +276,80 @@ body {
   /* padding: 0.2rem; */
 }
 .mi-cuenta a {
+  color: white;
+}
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 9; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.overlay .closebtn:hover{
+  transform: scale(1.3);
+}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.icon-bars{
+  font-size: 2rem;
+}
+.overlay-content > .cabecera-logo{
+  margin-bottom: 3rem;
+}
+.overlay-content > .cabecera-buscador{
+  max-width: 90%;
+  margin: 0 auto;
+}
+.overlay-content > .cabecera-acciones {
+  justify-content: center;
+  flex-direction: column;
+}
+.overlay-content > .cabecera-acciones > .carrito-contenedor{
+  margin: 1rem 0;
+  color: white;
+}
+.overlay-content > .cabecera-acciones > .carrito-contenedor > .carrito-numero-produtos {
+  bottom: -6px;
+  left: 53%;               /* Lo empujas al centro */
+  transform: translateX(-50%);
+}
+.overlay-content > .cabecera-acciones > .mi-cuenta{
+  margin: 1rem 0;
+}
+.overlay-content > .cabecera-acciones > .mi-cuenta a{
+  text-decoration: none;
+}
+.overlay-content > .cabecera-acciones > .mi-cuenta a span{
   color: white;
 }
 /* ------------------------ Pagina: Inicio ------------------------ */
@@ -960,8 +1034,8 @@ body {
     height: 100dvh;
   }
 
-  /* ------------------------ Pagina: paginas lsitado productos ------------------------ */
-  /* ------------------------ Seccion: filtrado ------------------------ */
+
+
 .seccion-listado-productos {
     grid-template-columns: 1fr;
   }
@@ -1019,7 +1093,22 @@ body {
   /* ------------------------ Seccion: Cabecera ------------------------ */
   .cabecera {
     margin-top: 0.2rem;
+    grid-template-columns: 1fr 1fr;
   }
+  .cabecera > .cabecera-buscador{
+    display: none;
+  }
+  .cabecera > .cabecera-acciones{
+    display: none;
+  }
+  .icon-bars{
+    text-align: end;
+    cursor: pointer;
+  }
+  .icon-bars i:hover{
+    transform: scale(1.3);
+  }
+
 
   /* ------------------------ Pagina: Inicio ------------------------ */
   /* ------------------------ Seccion: Introduccion ------------------------ */

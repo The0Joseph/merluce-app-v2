@@ -202,4 +202,3 @@ document.getElementById("ordenar")?.addEventListener("change", filtrarProductos)
 
 mostrarProductos(productos);
 mostrarProductosResponsivo(productos);
-

@@ -19,6 +19,38 @@
     <title>Inicio | Merluce</title>
 </head>
 <body class="contenedor">
+    <!-- Bars -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <div class="cabecera-logo">
+                <a href="home.html">
+                    <img src="img/logo_merluce.png" alt="" loading="lazy" decoding="async">
+                </a>
+            </div>
+            <div class="cabecera-buscador">
+                <input type="text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="cabecera-acciones">
+                <div class="carrito-contenedor" id="carrito-contenedor">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="mi-cuenta">
+                    <a href="mi_cuenta.html">
+                        <span>Cuenta</span>
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <!-- Navegacion -->
     <header class="cabecera">
 
@@ -41,6 +73,7 @@
                 </a>
             </div>
         </div>
+        <span onclick="openNav()" class="icon-bars"><i class="fa-solid fa-bars"></i></span>
     </header>
     <!-- Introduccion -->
     <section class="intro">
@@ -112,7 +145,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js">
-    </script>
+    <script src="js/script.js"></script>
+    <script src="js/script_bars.js"></script>
 </body>
 </html>
