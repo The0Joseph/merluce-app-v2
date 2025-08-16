@@ -691,9 +691,9 @@ body {
   flex-wrap: wrap;
   margin-top: 1rem;
 }
-  #seccion-ordenamiento{
-    display: none;
-  }
+#seccion-ordenamiento {
+  display: none;
+}
 
 /* ------------------------ Pagina: Quienes Somos ------------------------ */
 /* ------------------------ Seccion: Introduccion ------------------------ */
@@ -742,6 +742,9 @@ body {
   height: 400px;
   background-color: var(--color-primario);
   border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .tarjeta-valor h2 {
   text-align: center;
@@ -749,6 +752,13 @@ body {
   color: white;
   font-size: 1.8rem;
   margin: 3rem 0;
+}
+.tarjeta-valor-img {
+  width: 200px;
+}
+
+.tarjeta-valor-img img {
+  width: 100%;
 }
 
 /* ------------------------ Pagina: Quienes Somos ------------------------ */
@@ -919,6 +929,9 @@ body {
 
 /* Responsivo */
 @media (max-width: 900px) {
+  .contenedor {
+    margin: 0 1rem;
+  }
   /* ------------------------ Pagina: Login ------------------------ */
   /* ------------------------ Seccion: formulario ------------------------ */
   .contenedor-login {
@@ -998,7 +1011,7 @@ body {
     font-size: 3rem;
   }
   .tarjeta-valor {
-    height: 130px;
+    height: 200px;
   }
 
   .tarjeta-valor h2 {
@@ -1022,18 +1035,22 @@ body {
     width: auto;
   }
 
+  .tarjeta-valor-img {
+    width: 100px;
+  }
+
   /* ------------------------ Pagina: paginas lsitado productos ------------------------ */
   /* ------------------------ Seccion: filtrado ------------------------ */
   .seccion-listado-productos {
     grid-template-columns: 1fr;
   }
-  
-.filtrado-seccion{
-  display: flex;
-  flex-wrap: wrap;
 
-  /* flex-direction: column; */
-}
+  .filtrado-seccion {
+    display: flex;
+    flex-wrap: wrap;
+
+    /* flex-direction: column; */
+  }
 
   #seccion-marca {
     order: 1;
@@ -1047,14 +1064,13 @@ body {
     order: 3;
     width: 50%;
   }
-  #seccion-ordenamiento{
+  #seccion-ordenamiento {
     display: block;
     order: 4;
     width: 50%;
-
   }
 
-  .barra-ordenamiento div > select{
+  .barra-ordenamiento div > select {
     min-width: auto;
     width: 100%;
   }
@@ -1097,9 +1113,6 @@ body {
 }
 
 @media (max-width: 576px) {
-  .contenedor{
-    margin: 0 1rem;
-  }
   /* ------------------------ Pagina: Login ------------------------ */
   /* ------------------------ Seccion: formulario ------------------------ */
 
@@ -1127,13 +1140,20 @@ body {
     justify-content: center;
   }
 
-
-
-  .seccion-productos-titulo h1{
+  .seccion-productos-titulo h1 {
     font-size: 1.6rem;
   }
-  .seccion-productos-titulo a{
-        padding: 0.5rem ;
-        font-size: 1.3rem;
+  .seccion-productos-titulo a {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  /* ------------------------ Pagina: quienes somos ------------------------ */
+  /* ------------------------ Seccion: nueov valores ------------------------ */
+  .tarjeta-valor {
+    height: 130px;
+  }
+  .tarjeta-valor-img {
+    width: 60px;
   }
 }
