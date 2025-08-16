@@ -335,15 +335,7 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.overlay-content > .cabecera-acciones > .carrito-contenedor{
-  margin: 1rem 0;
-  color: white;
-}
-.overlay-content > .cabecera-acciones > .carrito-contenedor > .carrito-numero-produtos {
-  bottom: -6px;
-  left: 53%;               /* Lo empujas al centro */
-  transform: translateX(-50%);
-}
+
 .overlay-content > .cabecera-acciones > .mi-cuenta{
   margin: 1rem 0;
 }
@@ -1102,12 +1094,16 @@ body {
   .cabecera > .cabecera-buscador{
     display: none;
   }
-  .cabecera > .cabecera-acciones{
+  .cabecera > .cabecera-acciones {
+    justify-content: flex-end;
+  }
+  .cabecera > .cabecera-acciones > .mi-cuenta{
     display: none;
   }
   .icon-bars{
     text-align: end;
     cursor: pointer;
+    margin: 0 1rem;
   }
   .icon-bars i:hover{
     transform: scale(1.3);

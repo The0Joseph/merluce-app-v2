@@ -9,9 +9,9 @@ const productos = [
     { id_producto: 6, nombre_producto: 'Pack (2 Inka Chips Queso y Cebolla)', precio: 12.50, marca: 'inka chips', tipo: 'snacks', imagen: 'img/productos/papas_inkas_chips_queso_cebolla.png' },
     { id_producto: 7, nombre_producto: 'Pack 2 (Papas Kona Select Queso 100 Gr)', precio: 10.90, marca: 'kona', tipo: 'snacks', imagen: 'img/productos/papas_kona.png' },
     { id_producto: 8, nombre_producto: 'Pack (2 Papas Jappy Snacks BBQ 200gr)', precio: 11.50, marca: 'jappy', tipo: 'snacks', imagen: 'img/productos/papas_jappy_snack.png' },
-    // { id_producto: 9, nombre_producto: '', precio: '', marca: '', tipo: '', imagen: 'img/productos/' },
-    // { id_producto: 10, nombre_producto: '', precio: '', marca: '', tipo: '', imagen: '' },
-    // { id_producto: 11, nombre_producto: '', precio: '', marca: '', tipo: '', imagen: '' },
+    { id_producto: 9, nombre_producto: 'Gaseosa Coca Cola Zero 500 ml', precio: 2.70, marca: 'coca cola', tipo: 'bebida', imagen: 'img/productos/gaseosa_coca_cola_zero.png' },
+    { id_producto: 10, nombre_producto: 'Pack (2 Inka Chips Jalapeño x 135 Gr)', precio: 10.90, marca: 'inka chips', tipo: 'snacks', imagen: 'img/productos/papas_inkas_chips_jalapeno.png' },
+    { id_producto: 11, nombre_producto: 'Pack (2 Inka Chips Cebolla Caramel)', precio: 11.50, marca: 'inka chips', tipo: 'snacks', imagen: 'img/productos/papas_inka_chips_bbq_cebolla.png' },
 ]
 
 function capitalizarPrimeraLetra(texto) {
@@ -107,7 +107,10 @@ function mostrarProductosResponsivo(productos) {
     });
 }
 
+
 function agregarAlCarrito(id_producto) {
+    console.log('hola')
+    console.log(id_producto)
     const producto = productos.find(p => p.id_producto === id_producto);
     carrito.push(producto);
 
@@ -131,14 +134,15 @@ function llenarFiltro() {
     const precioValor = document.getElementById("precio-valor");
     const productosTotal = document.getElementById("produtosTotal");
 
-    const lista_marca = [...new Set(productos.map(p => ({ id: p.id_producto, nombre: p.marca })))];
+    // const lista_marca = [...new Set(productos.map(p => ({ id: p.id_producto, nombre: p.marca })))];
+    const lista_marca = [...new Set(productos.map(p => p.marca))];
     const lista_tipo = [...new Set(productos.map(p => p.tipo))];
     lista_marca.forEach(marca => {
         const li = document.createElement('li');
         li.innerHTML = `
         <label for="${marca.id}">
-            <input class="filtro-marca" type="checkbox" value="${marca.nombre}" id="${marca.id}">
-            ${capitalizarPrimeraLetra(marca.nombre)}
+            <input class="filtro-marca" type="checkbox" value="${marca}" id="${marca}">
+            ${capitalizarPrimeraLetra(marca)}
         </label>
         `;
         ulMarca?.appendChild(li);
