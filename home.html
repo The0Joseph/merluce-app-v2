@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fuente Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <title>Inicio | Merluce</title>
 </head>
@@ -19,8 +23,8 @@
     <header class="cabecera">
 
         <div class="cabecera-logo">
-            <a href="/home.html">
-                <img src="/img/logo_merluce.png" alt="" loading="lazy" decoding="async">
+            <a href="home.html">
+                <img src="img/logo_merluce.png" alt="" loading="lazy" decoding="async">
             </a>
         </div>
         <div class="cabecera-buscador">
@@ -32,7 +36,7 @@
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
             <div class="mi-cuenta">
-                <a href="/mi_cuenta.html">
+                <a href="mi_cuenta.html">
                     <i class="fa-solid fa-user"></i>
                 </a>
             </div>
@@ -44,7 +48,7 @@
             <div class="intro-texto">
                 <h1 class="intro-titulo oleo-script-regular ">Descubre Merluce</h1>
                 <p class="intro-parrafo roboto-regular ">Merluce es tu tienda de abarrotes de confianza, con mas de 10 años ofreciendo productos escenciales, atención amable y un servicio con valores como la responsabilidad y la dedicación.</p>
-                <a href="/quienes_somos.html" class="intro-boton-accion">Explorar</a>
+                <a href="quienes_somos.html" class="intro-boton-accion">Explorar</a>
             </div>
             <div class="intro-imagen">
                 <img src="img/imagen_introduccion.png" alt="" loading="lazy" decoding="async">
@@ -57,10 +61,9 @@
         <div class="seccion-productos">
             <div class="seccion-productos-titulo">
                 <h1 class="oleo-script-bold">Mis Productos</h1>
-                <a href="/pagina_listado_productos.html" class="roboto-regular">Ver más</a>
+                <a href="pagina_listado_productos.html" class="roboto-regular">Ver más</a>
             </div>
             <div class="seccion-productos-contenido roboto-regular" id="contenedor_productos">
-
                 <!-- <div class="tarjeta-producto">
                     <div class="tarjeta-producto-contenido">
                         <div class="tarjeta-producto-imagen">
@@ -75,8 +78,10 @@
                         </button>
                     </div>
                 </div> -->
-
             </div>
+            <div class="seccion-productos-contenido roboto-regular" id="contenedor_productos_responsivo"></div>
+
+
         </div>
     </main>
     <!-- footer -->
@@ -106,9 +111,8 @@
             <button class="subscribete-boton">Suscribirse</button>
         </div>
     </footer>
-
-    <script src="/js/script.js">
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js">
     </script>
 </body>
 </html>

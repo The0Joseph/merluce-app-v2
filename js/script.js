@@ -1,3 +1,4 @@
+let productosSwiper = null;
 let carrito = [];
 const productos = [
     { id_producto: 1, nombre_producto: 'Gaseosa Coca Cola 500 ml', precio: 2.50, marca: 'coca cola', tipo: 'bebida', imagen: 'img/productos/gaseosa_coca_cola.png' },
@@ -38,6 +39,71 @@ function mostrarProductos(productos) {
             </div>
         `;
         contenedor.appendChild(div);
+    });
+}
+
+function mostrarProductosResponsivo(productos) {
+    const contenedor = document.getElementById('contenedor_productos_responsivo');
+    if (!contenedor) return;
+
+    contenedor.innerHTML = `
+      <div class="swiper productos-swiper">
+        <div class="swiper-wrapper" id="productos-wrapper"></div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev" aria-label="Anterior"></div>
+        <div class="swiper-button-next" aria-label="Siguiente"></div>
+      </div>
+    `;
+
+    const wrapper = contenedor.querySelector('#productos-wrapper');
+    wrapper.innerHTML = productos.map(producto => `
+      <div class="swiper-slide">
+        <div class="tarjeta-producto">
+          <div class="tarjeta-producto-contenido">
+            <div class="tarjeta-producto-imagen">
+              <img src="${producto.imagen}" alt="${producto.nombre_producto || ''}" loading="lazy" decoding="async">
+            </div>
+            <h5 class="tarjeta-producto-titulo roboto-regular">
+              ${producto.nombre_producto}
+            </h5>
+          </div>
+          <div class="tarjeta-producto-footer roboto-regular">
+            <p>S/ ${Number(producto.precio).toFixed(2)}</p>
+            <button type="button" aria-label="Agregar al carrito"
+                    onclick="agregarAlCarrito(${producto.id_producto})">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    `).join('');
+
+    if (productosSwiper) {
+        productosSwiper.destroy(true, true);
+    }
+
+    productosSwiper = new Swiper( '.productos-swiper' , {
+        slidesPerView: 1.1,
+        spaceBetween: 12,
+        loop: false,
+        watchOverflow: true, 
+
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+
+        breakpoints: {
+            480: { slidesPerView: 1.4, spaceBetween: 12 },
+            576: { slidesPerView: 2.1, spaceBetween: 12 },
+            768: { slidesPerView: 3, spaceBetween: 16, allowTouchMove: false },
+            1024: { slidesPerView: 4, spaceBetween: 20, allowTouchMove: false }
+        },
+
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+        }
     });
 }
 
@@ -135,4 +201,5 @@ document.getElementById("filtro-precio")?.addEventListener("input", () => {
 document.getElementById("ordenar")?.addEventListener("change", filtrarProductos);
 
 mostrarProductos(productos);
+mostrarProductosResponsivo(productos);
 
