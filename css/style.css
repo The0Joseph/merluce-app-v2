@@ -259,6 +259,10 @@ body {
 
 .carrito-contenedor {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .carrito-numero-produtos {
   position: absolute;
