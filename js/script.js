@@ -179,6 +179,10 @@ function filtrarProductos() {
     const precioMax = parseInt(document.getElementById("filtro-precio")?.value);
 
     const orden = document.getElementById("ordenar")?.value;
+    const orden_res = document.getElementById("ordenar-responsive")?.value;
+
+    console.log(orden)
+    console.log(orden_res)
 
     let filtrados = productos.filter(p =>
         (marcasSeleccionadas.length === 0 || marcasSeleccionadas.includes(p.marca)) &&
@@ -186,9 +190,9 @@ function filtrarProductos() {
         p.precio <= precioMax
     );
 
-    if (orden === "asc") {
+    if (orden === "asc" || orden_res == "asc") {
         filtrados.sort((a, b) => a.precio - b.precio);
-    } else if (orden === "desc") {
+    } else if (orden === "desc" || orden_res == "desc") {
         filtrados.sort((a, b) => b.precio - a.precio);
     }
 
@@ -203,6 +207,11 @@ document.getElementById("filtro-precio")?.addEventListener("input", () => {
     filtrarProductos();
 });
 document.getElementById("ordenar")?.addEventListener("change", filtrarProductos);
+
+['ordenar','ordenar-responsive'].forEach(id =>
+  document.getElementById(id)?.addEventListener('change', filtrarProductos)
+);
+
 
 mostrarProductos(productos);
 mostrarProductosResponsivo(productos);
